@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    tools:context=".CalculatedActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Below is your calculated budget. "
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/utilityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Utility Bills:"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/utilityOut"
+            android:layout_width="151dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="bottom|end"
+            android:ems="10"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/entertainmentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00137C00"
+            android:ems="10"
+            android:text="Entertainment:"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/entertainmentOut"
+            android:layout_width="143dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="bottom|end"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/groceriesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Groceries:"
+            android:textIsSelectable="false"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/groceriesOut"
+            android:layout_width="185dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom|end"
+            android:layout_gravity="right"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/homeINSText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00137C00"
+                android:ems="10"
+                android:text="Home Insurance:"
+                android:textIsSelectable="false"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/homeINSOut"
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="bottom|end"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/wifiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00137C00"
+                android:ems="10"
+                android:text="Wifi/TV:"
+                android:textIsSelectable="false"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/wifiout"
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="bottom|end"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/carPayText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00137C00"
+                android:ems="10"
+                android:text="Car Payment:"
+                android:textIsSelectable="false"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/carPayOut"
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="bottom|end"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/carINSText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00137C00"
+                android:ems="10"
+                android:text="Car Insurance:"
+                android:textIsSelectable="false"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/carINSOut"
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="bottom|end"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/carMaintText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00137C00"
+                android:ems="10"
+                android:text="Car Maintenance/Gas:"
+                android:textIsSelectable="false"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/carMaintOut"
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="bottom|end"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00137C00"
+                android:ems="10"
+                android:text="Phone Bill:"
+                android:textIsSelectable="false"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/phoneOut"
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="bottom|end"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/gymText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00137C00"
+                android:ems="10"
+                android:text="Gym Membership:"
+                android:textIsSelectable="false"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/gymOut"
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="bottom|end"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/healthINSText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00137C00"
+                android:ems="10"
+                android:text="Health Insurance:"
+                android:textIsSelectable="false"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/healthINSOut"
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="bottom|end"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/leftOver"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="bottom"
+                android:text="Leftover Money:"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/leftOverOut"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:ems="10"
+                android:gravity="bottom|end"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/editIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Re-Enter Income" />
+
+            <Button
+                android:id = "@+id/editPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text = "Adjust Calculations"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

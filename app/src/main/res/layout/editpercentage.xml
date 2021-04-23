@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradientbackground"
+    tools:context=".EditPercentageActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calc_welcome"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/billsText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="Bills:"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/setUtilityPercent"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:editable="true"
+                android:ems="10"
+                android:inputType="number"
+                android:text=""
+                android:textSize="30dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/entertainText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="Entertainment:"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/setEntertainPercent"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:editable="true"
+                android:ems="10"
+                android:inputType="number"
+                android:text=""
+                android:textSize="30dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/groceryText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="Groceries:"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/setGroceryPercent"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:editable="true"
+                android:ems="10"
+                android:inputType="number"
+                android:text=""
+                android:textSize="30dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/homeINSText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="Home Insurance:"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/setHomeINSPercent"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:editable="true"
+                android:ems="10"
+                android:inputType="number"
+                android:text=""
+                android:textSize="30dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/wifiText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="Wifi/TV:"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/setWifiPercent"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:editable="true"
+                android:ems="10"
+                android:inputType="number"
+                android:text=""
+                android:textSize="30dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/carPayText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="Car Payment:"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/setCarPayPercent"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:editable="true"
+                android:ems="10"
+                android:inputType="number"
+                android:text=""
+                android:textSize="30dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/carINSText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="Car Insurance:"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/setCarINSPercent"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:editable="true"
+                android:ems="10"
+                android:inputType="number"
+                android:text=""
+                android:textSize="30dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/carMaintText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="Car Maintenance/Gas:"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/setCarMaintPercent"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:editable="true"
+                android:ems="10"
+                android:inputType="number"
+                android:text=""
+                android:textSize="30dp" />
+        </FrameLayout>
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/phoneText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="Phone Bill:"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="false"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/setPhonePercent"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:editable="true"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text=""
+                    android:textSize="30dp" />
+            </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/gymText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="Gym Membership:"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="false"
+                        android:textSize="30dp" />
+
+                    <EditText
+                        android:id="@+id/setGymPercent"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:editable="true"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:text=""
+                        android:textSize="30dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/healthINSText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="Health Insurance:"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="false"
+                        android:textSize="30dp"/>
+
+                    <EditText
+                        android:id="@+id/setHealthINSPercent"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:editable="true"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:text=""
+                        android:textSize="30dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/totalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="Total Percent:"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="false"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/setTotalPercent"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:editable="true"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:text=""
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    >
+
+                    <Button
+                        android:id="@+id/recalc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Re-Calculate" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

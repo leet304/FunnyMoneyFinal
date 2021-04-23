@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FunnyMoney</string>
+    <string name="calc_welcome">This is where you can edit your percentages.<br/> Be sure not to go over 100%</string>
+</resources>
